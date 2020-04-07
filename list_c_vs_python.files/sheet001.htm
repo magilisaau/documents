@@ -1,0 +1,243 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link id=Main-File rel=Main-File href="../list_c_vs_python.htm">
+<link rel=File-List href=filelist.xml>
+<link rel=Stylesheet href=stylesheet.css>
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:等线;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;
+	display:none;}
+-->
+</style>
+<![if !supportTabStrip]><script language="JavaScript">
+<!--
+function fnUpdateTabs()
+ {
+  if (parent.window.g_iIEVer>=4) {
+   if (parent.document.readyState=="complete"
+    && parent.frames['frTabs'].document.readyState=="complete")
+   parent.fnSetActiveSheet(0);
+  else
+   window.setTimeout("fnUpdateTabs();",150);
+ }
+}
+
+if (window.name!="frSheet")
+ window.location.replace("../list_c_vs_python.htm");
+else
+ fnUpdateTabs();
+//-->
+</script>
+<![endif]>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+
+<table border=0 cellpadding=0 cellspacing=0 width=991 style='border-collapse:
+ collapse;table-layout:fixed;width:743pt'>
+ <col width=40 style='mso-width-source:userset;mso-width-alt:1422;width:30pt'>
+ <col width=135 style='mso-width-source:userset;mso-width-alt:4807;width:101pt'>
+ <col width=342 style='mso-width-source:userset;mso-width-alt:12145;width:256pt'>
+ <col width=474 style='mso-width-source:userset;mso-width-alt:16867;width:356pt'>
+ <tr height=30 style='mso-height-source:userset;height:22.2pt'>
+  <td height=30 class=xl65 width=40 style='height:22.2pt;width:30pt'>序号</td>
+  <td class=xl65 width=135 style='border-left:none;width:101pt'>功能/语言</td>
+  <td class=xl66 width=342 style='border-left:none;width:256pt'>Python</td>
+  <td class=xl66 width=474 style='border-left:none;width:356pt'>C</td>
+ </tr>
+ <tr height=55 style='mso-height-source:userset;height:41.4pt'>
+  <td height=55 class=xl71 align=right style='height:41.4pt;border-top:none'>1</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>插入</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>.insert(
+  i, e )</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>1.
+  insert( it, e )，这里的it代表迭代器Iterator，不是整型.<br>
+    2. 从另一个链表中插入一段 insert( it_pos, it_start, it_end）</td>
+ </tr>
+ <tr height=40 style='mso-height-source:userset;height:30.0pt'>
+  <td height=40 class=xl68 align=right style='height:30.0pt;border-top:none'>2</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>索引删除</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>.pop(
+  i )</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>.erase(
+  iterator)</td>
+ </tr>
+ <tr height=46 style='mso-height-source:userset;height:34.8pt'>
+  <td height=46 class=xl71 align=right style='height:34.8pt;border-top:none'>3</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>删除一段</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>1.
+  list[a:b]=[]<br>
+    2. del list[a:b]</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>.erase(it_start,it_end)</td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.8pt'>
+  <td height=26 class=xl68 align=right style='height:19.8pt;border-top:none'>4</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>删除元素</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>.remove(
+  e )，只会删除第1个符合条件的元素</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>.remove(
+  e ), c++会删除所有的e</td>
+ </tr>
+ <tr height=30 style='mso-height-source:userset;height:22.8pt'>
+  <td height=30 class=xl71 align=right style='height:22.8pt;border-top:none'>5</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>清空</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>.clear()</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>.clear()</td>
+ </tr>
+ <tr height=84 style='mso-height-source:userset;height:63.0pt'>
+  <td height=84 class=xl68 align=right style='height:63.0pt;border-top:none'>6</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>遍历</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>正序：for
+  x in list：print(x)<br>
+    倒序：for i in range(-1, -len-1, -1):<span style='mso-spacerun:yes'>&nbsp;
+  </span>print( list[ i ] )</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>正序1：<span
+  style='mso-spacerun:yes'>&nbsp; </span>for (int x:lst) cout&lt;&lt;x；<br>
+    正序2： for(list&lt;int&gt;::iterator it=lst.begin(); it!=lst.end();
+  it++)<span style='mso-spacerun:yes'>&nbsp; </span>{cout&lt;&lt;*it; }<br>
+    倒序 for(… it=lst.rbegin(); it!=lst.rend(); it++)</td>
+ </tr>
+ <tr height=33 style='mso-height-source:userset;height:24.6pt'>
+  <td height=33 class=xl71 align=right style='height:24.6pt;border-top:none'>7</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>切片</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>list[
+  start:end:step]</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>list1.asign(it_start,it_end)</td>
+ </tr>
+ <tr height=54 style='mso-height-source:userset;height:40.8pt'>
+  <td height=54 class=xl68 align=right style='height:40.8pt;border-top:none'>8</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>排序</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>.sort(key=lambda)
+  <br>
+    假设y=f(x), lambda返回的是y</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>.sort(cmp),
+  cmp返回bool,小于返回true</td>
+ </tr>
+ <tr height=30 style='mso-height-source:userset;height:22.2pt'>
+  <td height=30 class=xl71 align=right style='height:22.2pt;border-top:none'>9</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>逆序</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>.reverse()</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>.reverse()</td>
+ </tr>
+ <tr height=34 style='mso-height-source:userset;height:25.8pt'>
+  <td height=34 class=xl68 align=right style='height:25.8pt;border-top:none'>10</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>删除重复</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>set(list)，转换成集合</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>list.unique()</td>
+ </tr>
+ <tr height=30 style='mso-height-source:userset;height:22.2pt'>
+  <td height=30 class=xl71 align=right style='height:22.2pt;border-top:none'>11</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>查找</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>.index(
+  e )</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>.find(
+  e )返回it</td>
+ </tr>
+ <tr height=35 style='mso-height-source:userset;height:26.4pt'>
+  <td height=35 class=xl68 align=right style='height:26.4pt;border-top:none'>12</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>链表长度</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>len(
+  list )</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>.size()</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.4pt'>
+  <td height=27 class=xl71 align=right style='height:20.4pt;border-top:none'>13</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>单个元素个数</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>.count(
+  e )</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>.count(
+  e )</td>
+ </tr>
+ <tr height=29 style='mso-height-source:userset;height:21.6pt'>
+  <td height=29 class=xl68 align=right style='height:21.6pt;border-top:none'>14</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>拷贝链表</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>.copy()</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>='
+  直接用赋值</td>
+ </tr>
+ <tr height=31 style='mso-height-source:userset;height:23.4pt'>
+  <td height=31 class=xl71 align=right style='height:23.4pt;border-top:none'>15</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>取第一个元素</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>list[
+  0 ]</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>list.front()</td>
+ </tr>
+ <tr height=30 style='mso-height-source:userset;height:22.2pt'>
+  <td height=30 class=xl68 align=right style='height:22.2pt;border-top:none'>16</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>取最后一个元素</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>list[-1]</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>list.back()</td>
+ </tr>
+ <tr height=35 style='mso-height-source:userset;height:26.4pt'>
+  <td height=35 class=xl71 align=right style='height:26.4pt;border-top:none'>17</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>删除第一个元素</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>list.pop(
+  0 )</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>list.pop_front()</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.4pt'>
+  <td height=27 class=xl68 align=right style='height:20.4pt;border-top:none'>18</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>删除最后一个元素</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>list.pop(
+  -1 )</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>list.pop_back()</td>
+ </tr>
+ <tr height=26 style='mso-height-source:userset;height:19.2pt'>
+  <td height=26 class=xl71 align=right style='height:19.2pt;border-top:none'>19</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>左边插入元素</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>list.insert(
+  0, e )</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>list.push_front(
+  e )</td>
+ </tr>
+ <tr height=27 style='mso-height-source:userset;height:20.4pt'>
+  <td height=27 class=xl68 align=right style='height:20.4pt;border-top:none'>20</td>
+  <td class=xl74 width=135 style='border-top:none;border-left:none;width:101pt'>右边插入元素</td>
+  <td class=xl69 width=342 style='border-top:none;border-left:none;width:256pt'>list.append(
+  e )</td>
+  <td class=xl67 width=474 style='border-top:none;border-left:none;width:356pt'>list.push_back(
+  e )</td>
+ </tr>
+ <tr height=35 style='mso-height-source:userset;height:26.4pt'>
+  <td height=35 class=xl71 align=right style='height:26.4pt;border-top:none'>21</td>
+  <td class=xl73 width=135 style='border-top:none;border-left:none;width:101pt'>两链表合</td>
+  <td class=xl70 width=342 style='border-top:none;border-left:none;width:256pt'>L=L1+L2</td>
+  <td class=xl72 width=474 style='border-top:none;border-left:none;width:356pt'>list1.merge(list2)</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=40 style='width:30pt'></td>
+  <td width=135 style='width:101pt'></td>
+  <td width=342 style='width:256pt'></td>
+  <td width=474 style='width:356pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>
